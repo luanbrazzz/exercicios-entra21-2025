@@ -5,11 +5,11 @@ public class Main {
         System.out.println();
         System.out.println("Bem vindo a nossa loja de produtos!");
 
-        Produto camiseta = new Produto();
+        Produto camiseta = new Produto(
+                "Regata GG Tommy",
+                299.00,
+                10);
 
-        camiseta.nome = "Regata GG Tommy";
-        camiseta.preço = 299.00;
-        camiseta.quantidade = 10;
         System.out.println();
         camiseta.exibirDetalhes();
         camiseta.vender(5);
@@ -18,10 +18,12 @@ public class Main {
         camiseta.exibirDetalhes();
         System.out.println();
 
-        Produto calca = new Produto();
-        calca.nome = "Calça 44 Levis";
-        calca.preço = 272.93;
-        calca.quantidade = 7;
+
+        Produto calca = new Produto(
+                "Calça 44 Levis",
+                272.93,
+                7);
+
         calca.exibirDetalhes();
         calca.vender(5);
         calca.exibirDetalhes();
